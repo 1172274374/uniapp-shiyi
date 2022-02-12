@@ -1,0 +1,153 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/home/shiyi-home",
+			// "path":"try",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"titleNView": false, // 隐藏首页顶部的title栏
+					"bounce": "none" // 取消回弹
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/category/category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/tabBar/cart/settlement",
+			"style": {
+				"navigationBarTitleText": "确认订单"
+			}
+		},
+		{
+			"path": "pages/search/searchHistory",
+			"style": {
+				"navigationBarTitleText": "搜索历史",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/search/searchGoodsList",
+			"style": {
+				"navigationBarTitleText": "搜索商品的列表页",
+				"enablePullDownRefresh": true, // 当前页面允许下拉刷新
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor":"#F06C7A",
+				"navigationBarTextStyle":"white",
+				"backgroundColorTop":"#F06C7A",
+				"backgroundTextStyle":"light",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/user/userQrCode",
+			"style": {
+				"navigationBarTitleText": "我的二维码"
+			}
+		},
+		{
+			"path": "pages/goods/goodsList",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true // 当前页面允许下拉刷新
+			}
+		},
+		{
+			"path": "pages/goods/goods",
+			"style": {
+				"navigationBarTitleText": "商品",
+				"h5": {
+					"titleNView": false
+				},
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/goods/ratings",
+			"style": {
+				"navigationBarTitleText": "商品评论"
+			}
+		}
+	    
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "米修在线",
+		"navigationBarBackgroundColor": "#FFFFFF", //顶部导航栏背景色
+		"backgroundColor": "#000000" //窗口的背景色backgroundColor(只有下拉时能够看见)
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	},
+	"tabBar": {  // 底部选项卡
+		"color": "#333333",
+		"selectedColor": "#F06C7A",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath":"pages/tabBar/home/home",
+				"iconPath":"static/img/tabBar/home.png",
+				"selectedIconPath":"static/img/tabBar/home-on.png",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/tabBar/category/category",
+				"iconPath":"static/img/tabBar/category.png",
+				"selectedIconPath":"static/img/tabBar/category-on.png",
+				"text":"分类"
+			},
+			{
+				"pagePath":"pages/tabBar/cart/cart",
+				"iconPath":"static/img/tabBar/cart.png",
+				"selectedIconPath":"static/img/tabBar/cart-on.png",
+				"text":"购物车"
+			},
+			{
+				"pagePath":"pages/tabBar/user/user",
+				"iconPath":"static/img/tabBar/user.png",
+				"selectedIconPath":"static/img/tabBar/user-on.png",
+				"text":"我的"
+			}
+		]
+	}
+}
