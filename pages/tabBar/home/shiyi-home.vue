@@ -45,7 +45,6 @@
 				</view>
 			</view>
 		</view>
-	
 		<view class="new_shop">
 			<view class="new_shop_banner">
 				<image src="https://img01.yzcdn.cn/upload_files/2020/10/26/FgTq6aTOZueg711hsH8Y3TwBP9Mi.png!large.webp" mode=""></image>
@@ -95,10 +94,10 @@
 				</view>
 				<view class="new_shop_discount_one">
 					<view class="new_shop_discount_one_one">
-						<image src="https://img01.yzcdn.cn/upload_files/2022/01/06/FvXSl6tVLBZCg1ohR_29lh-cYHDz.gif!middle.webp" mode=""></image>
+						<image src="https://img01.yzcdn.cn/upload_files/2022/01/06/FueWi9sf36Lut3l7LvUrF2GDcoRQ.gif!middle.webp" mode=""></image>
 						<view class="miaosha">
 							<text>
-								距结束&nbsp;3:12:23:40
+								距结束&nbsp;2:23:56:46
 							</text>
 						</view>
 					</view>
@@ -108,26 +107,26 @@
 								<text>5.6折起</text>
 							</view>
 							<view class="discount_top_title">
-								亲肤透气 贴服稳定 | Miss LI里小姐 三明治软...
+								植绒科技聚拢，3D果凝胶隐形侧收技术，无钢圈，三排扣隐形式设计，面料亲肤，高弹肩带不勒。
 							</view>
 						</view>
 						<view class="discount_center">
 							<view class="bar">
 								
 							</view>
-							<view class="bar_s">
+							<view class="bar_s" style="width: 50%;">
 								
 							</view>
 							<view class="bar_num">
-								已经抢购<text>20</text>件
+								已经抢购<text>40</text>件
 							</view>
 						</view>
 						<view class="discount_bottom">
 							<view class="price">
-								￥<text>89</text>
+								￥<text>99</text>
 							</view>
 							<view class="old_price">
-								￥158
+								￥168
 							</view>
 							<view class="buy">
 								立即抢购
@@ -195,9 +194,19 @@
 				</view>
 			</view>
 			<view class="info">
-				<image src="" mode=""></image>
+				<image src="https://img01.yzcdn.cn/upload_files/2018/08/03/Ft4qp_hXYYHhYcb0Uh4GzqzkwQFS.jpg!large.webp" mode=""></image>
+			</view>
+			<view class="other">
+				<text>店铺主页</text>
+				<text>|</text>
+				<text>个人中心</text>
+				<text>|</text>
+				<text>关注中心</text>
+				<text>|</text>
+				<text>店铺信息</text>
 			</view>
 		</view>
+
 	</view>
 </template>
 
@@ -542,10 +551,12 @@
 						
 						text{
 							font-weight: bold;
-							font-size: 12px;
+							font-size: 3vw;
 							color: white;
 							text-align: left;
-							line-height: 160%;
+							line-height: 3vw;
+							overflow: hidden;
+							white-space: nowrap;
 						}
 					}
 					
@@ -575,6 +586,8 @@
 							display: flex;
 							justify-content: center;
 							align-items: center;
+							white-space: nowrap;
+							overflow: hidden;
 							
 							text{
 								font-size: 12px;
@@ -589,6 +602,9 @@
 							font-size: 3vw;
 							line-height: 5vw;
 							overflow: hidden;
+							line-height: 6vw;
+							text-overflow: ellipsis;
+							// white-space: nowrap;
 						}
 						
 					}
@@ -724,6 +740,8 @@
 					width: 100%;
 					height: 20%;
 					font-size: 3.5vw;
+					white-space: nowrap;
+					text-overflow: ellipsis;
 					overflow: hidden;
 					background: #fff;
 				}
@@ -792,7 +810,6 @@
 				&:nth-child(1){
 					width: 20%;
 					height: 100%;
-					background: blue;
 					
 					image{
 						width: 100%;
@@ -847,6 +864,35 @@
 						line-height: 6vw;
 						font-size: 3vw;
 					}
+				}
+			}
+		}
+		.info{
+			width: 80%;
+			height: 28vw;
+			margin: 20px auto;
+			
+			image{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		
+		.other{
+			width: 80%;
+			height: 20vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+			
+			text{
+				font-size: 3.5vw;
+				color: #65646a;
+				
+				&:nth-child(2n){
+					color: #e3e5e4;
+					padding: 0 5px;
 				}
 			}
 		}
