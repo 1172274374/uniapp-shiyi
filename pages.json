@@ -125,7 +125,7 @@
 		"backgroundColor": "#FFFFFF",
 		"list": [
 			{
-				"pagePath":"pages/tabBar/home/home",
+				"pagePath":"pages/tabBar/home/shiyi-home",
 				"iconPath":"static/img/tabBar/home.png",
 				"selectedIconPath":"static/img/tabBar/home-on.png",
 				"text":"首页"
