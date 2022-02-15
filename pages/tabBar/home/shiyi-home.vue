@@ -521,11 +521,13 @@
 			align-content: space-around;
 			flex-wrap: wrap;
 			
+			
 			.new_shop_discount_one{
 				width: 100%;
 				height: 40%;
 				border-radius: 10px;
 				overflow: hidden;
+				box-shadow: 0upx 5upx 25upx rgba(0,0,0,0.1);
 				
 				.new_shop_discount_one_one{
 					width: 40%;
@@ -596,15 +598,16 @@
 						}
 						
 						&_title{
-							width: 100%;
-							height: 100%;
-							text-indent: 35%;
-							font-size: 3vw;
-							line-height: 5vw;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 2;
+							text-align: justify; 		/* 文本两端对齐 */
 							overflow: hidden;
-							line-height: 6vw;
 							text-overflow: ellipsis;
-							// white-space: nowrap;
+							width: 92%;
+							padding: 6upx 4%;
+							font-size: 4vw;
+							text-indent: 15vw;
 						}
 						
 					}
@@ -720,6 +723,7 @@
 			.shopOfNew{
 				width: 30%;
 				height: 25%;
+				box-shadow: 0upx 5upx 25upx rgba(0,0,0,0.1);
 				// border-radius: 10px;
 				
 				.shopOfNew_show{
@@ -737,12 +741,15 @@
 				}
 				
 				.shopOfNew_title{
-					width: 100%;
-					height: 20%;
-					font-size: 3.5vw;
-					white-space: nowrap;
-					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					text-align: justify; 		/* 文本两端对齐 */
 					overflow: hidden;
+					text-overflow: ellipsis;
+					width: 92%;
+					padding: 6upx 4%;
+					font-size: 30upx;
 					background: #fff;
 				}
 				.shopOfNew_price{
@@ -761,12 +768,13 @@
 						color: red;
 						font-size: 2vw;
 						line-height: none;
-						justify-content: center;
+						justify-content: flex-start;
 						align-items: center;
-						padding-left: 5px;
+						padding-left: 8px;
 						
 						text{
 							font-size: 4vw;
+							
 						}
 					}
 					.shopCart{

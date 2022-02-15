@@ -75,13 +75,6 @@
 			}
 		},
 		{
-			"path": "pages/goods/goodsList",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": true // 当前页面允许下拉刷新
-			}
-		},
-		{
 			"path": "pages/goods/goods",
 			"style": {
 				"navigationBarTitleText": "商品",
@@ -100,7 +93,19 @@
 				"navigationBarTitleText": "商品评论"
 			}
 		}
-	    
+        ,{
+            "path" : "pages/config/config",
+            "style": {
+            	"navigationBarTitleText": "配置",
+            	"h5": {
+            		"titleNView": false
+            	},
+            	"app-plus": {
+            		"titleNView": false,
+            		"bounce": "none"
+            	}
+            }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

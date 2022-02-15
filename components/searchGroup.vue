@@ -3,19 +3,19 @@
 		<view class="header">
 			<!-- 定位城市 -->
 			<view class="addr">
-				<view class="icon iconfont">&#xe63b;</view>
+				<view class="icon iconfont">&#xecb5;</view>
 				<view class="add_text">{{city[Math.floor(Math.random()*5)]}}</view>
 			</view>
 			
 			<!-- 搜索框组 -->
 			<view class="input-box">
 				<input type="text" placeholder="默认关键字" disabled placeholder-style="color:#c0c0c0;" @click="onClickInput" />
-				<view class="icon iconfont" @click="onClickCameraIcon">&#xe8bc;</view>
+				<view class="icon iconfont" @click="onClickCameraIcon">&#xe62f;</view>
 			</view>
 			
 			<!-- 右侧扫码button -->
 			<view class="icon-btn">
-				<view class="icon iconfont" @click="onClickScanCodeIcon">&#xe600;</view>
+				<view class="icon iconfont" @click="onClickScanCodeIcon">&#xe727;</view>
 			</view>
 		</view>
 		<!-- 占位盒子（header盒子时fixed的，它会覆盖部分正文内容） -->
@@ -98,11 +98,11 @@
 				margin-right: 5upx;
 				display: flex;
 				align-items:center;
-				font-size: 42upx;
-				color: #ffc50a;
+				font-size: 5vw;
+				color: #ff0000;
 			}
 			.add_text{
-				color: #ffc50a;
+				color: #ff557f;
 			}
 		}
 		.input-box {
@@ -139,8 +139,8 @@
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
-				font-size: 42upx;
-				color: red;
+				font-size: 6vw;
+				color: #afafaf;
 			}
 		}
 	}

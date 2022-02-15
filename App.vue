@@ -20,5 +20,14 @@
 	.uni-mask {
 		background: rgba(0,0,0,.5) !important;
 	}
-	scroll-behavior: smooth;
+	.scroll-box ::-webkit-scrollbar{
+	    width: 0 !important;
+	    display: none;
+	    height: 0 !important;
+	    -webkit-appearance : none;
+	    background : transparent;
+	}
+	html{
+		scroll-behavior: smooth;
+	}
 </style>

@@ -1,7 +1,7 @@
 <template>
 	<view class="search-header">
 		<!-- 左侧箭头 -->
-		<view class="icon iconfont go-back-btn" @click="onClickGoBack">&#xe744;</view>
+		<view class="icon iconfont go-back-btn" @click="onClickGoBack">&#xe7ed;</view>
 		<!-- 搜索框 -->
 		<view class="input-box">
 			<input type="text" v-model="searchText" placeholder="默认关键字" focus />
@@ -24,7 +24,9 @@
 		methods: {
 			// 返回按钮的点击事件，跳转到上一页
 			onClickGoBack() {
-				this.$emit("go-back")
+				uni.navigateBack({
+					delta:1
+				})
 			},
 			// 搜索图标的点击事件，搜索商品
 			onClickSearchBtn() {
