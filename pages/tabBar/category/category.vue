@@ -240,9 +240,9 @@
 	export default {
 		data(){
 			return {
-				text_tip:'下拉加载更多....',
+				text_tip:'加载完毕',
 				tag_active:1,
-				uporlow:1,
+				uporlow:3,
 				change_price:1
 			}
 		},
@@ -506,4 +506,11 @@
 		}
 	}
 	
+	.tip{
+		width: 100%;
+		height: 20%;
+		text-align: center;
+		color: #9a9a9a;
+		padding: 10px;
+	}
 </style>

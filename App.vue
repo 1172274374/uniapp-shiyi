@@ -12,9 +12,11 @@
 	}
 </script>
 
-<style>
+<style lang="scss" scoped>
 	/*每个页面公共css */
-	@import "./static/iconfont/iconfont.css";
+	
+	@import '@/uni_modules/uview-ui/theme.scss';
+	@import "@/uni_modules/uview-ui/index.scss";
 	
 	page{position: relative;background-color: #fff;}
 	.uni-mask {
@@ -30,4 +32,8 @@
 	html{
 		scroll-behavior: smooth;
 	}
+</style>
+
+<style>
+	@import "./static/iconfont/iconfont.css";
 </style>
